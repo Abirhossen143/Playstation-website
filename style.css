@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 85%;
+    min-height: 100vh;
+    margin-left: 8%;
+    margin-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.logo{
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+ul li a{
+    color:black;
+}
+.nav-link{
+    display: flex;
+    text-align: right ;
+}
+.nav-link ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.menu-icon{
+    cursor: pointer;
+    display: none;
+}
+section{
+    display: flex;
+}
+.header-para{
+    margin-left: 25px;
+    margin-top: 5rem;
+    flex-basis: 40%;
+   line-height: 2.5rem;
+}
+h1{
+    font-size: 3rem;
+    display: inline-block;
+}
+span{
+    display:block;
+    margin-top: 10px;
+}
+h4,h5{
+    color: #555;
+}
+.doller{
+    font-weight: 700;
+    color: black;
+}
+button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #CC5258;
+    transition: width 0.5s;
+}
+button a{
+    color: #fff;
+}
+button img{
+    display: none;
+    margin-left: 10px;
+}
+button:hover img{
+    display:inline-block;
+}
+button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-para::after{
+    content: '';
+    width: 10px;
+    height: 28%;
+    background: #CC5258;
+    position: absolute;
+    left: 110px;
+    top: 8.5rem;
+}
+.header-img{
+    margin-top: 5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.header-img .controller{
+    width: 80%;
+}
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background:#CC5258 ;
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+.add-btn img{
+    width: 35px;
+    margin-bottom: 5px;
+}
+.add-btn{
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.social-links img{
+    height: 13px;
+    margin: 20px;
+    cursor: pointer;
+}
+.social-links{
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width:700px){
+    nav .nav-link ul{
+        width: 100%;
+        background: #CC5258;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+        .menu-icon{
+            display: block;
+        }
+    section{
+        flex-direction: column-reverse;
+    }
+        .header-para::after{
+                left: 40px;
+                top: 23.9rem;
+        }
+}
